@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class Page1Component {
 
-  @Input()
+  MessagePage1 : string = "Message from Page1Component";
   
 
 

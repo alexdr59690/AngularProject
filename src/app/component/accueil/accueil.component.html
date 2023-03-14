@@ -1,0 +1,18 @@
+
+<div>
+    <ul>
+      <li *ngFor="let d of day, let i = index">{{i+1}} {{d}}</li>
+    </ul>
+  </div>
+  
+  
+  <div>
+    <ul  *ngFor="let group of peopleCountry">
+      <li> {{group.Country}}</li>
+      <ul>
+      <li *ngFor="let itemPerson of group.People">{{itemPerson.Name}} {{itemPerson.FirstName}}</li>
+      </ul>
+    </ul>
+  </div>
+  
+  <!--https://codecraft.tv/courses/angular/built-in-directives/ngfor/-->
